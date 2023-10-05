@@ -8,9 +8,21 @@
 </head>
 
 <style>
-    body {
-        text-align: center;
+
+    table {
+        margin: 0 auto;
     }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+    td:hover {
+            background-color: rgb(160, 142, 238);
+        }
 </style>
 
 <body>
@@ -26,10 +38,55 @@
     </header>
     <br>
     <main>
-        <h1>Tabelas com células numeradas</h1>
+        <h1 style="text-align: center;">Tabelas com células numeradas</h1>
         <br>
-        <table>
-
+        <table style="width: 250px;" border 1px solid;>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr style="text-align: end;">
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <br>
+        <table style="width: 250px;">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" colspan="3">4</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+        <br>
+        <table style="width: 250px;">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td style="text-align: center;" rowspan="3">3</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="2">4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+            </tr>
         </table>
     </main>
 </body>

@@ -8,12 +8,16 @@
 </head>
 
 <style>
-    body {
-        text-align: center;
+    td {
+        width: 50px;
+        height: 50px;
     }
+    td:hover {
+            background-color: rgb(160, 142, 238);
+        }
 </style>
 
-<body>
+<body style="text-align: center;">
     <header>
         <br>
         <nav>
@@ -28,8 +32,71 @@
     <main>
         <h1>Tabela quadrados</h1>
         <br>
-        <table>
+        <h2>Primeira</h2>
+        <table border="1" style="margin: 0 auto; border: 1px groove black">
+            <tr>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
 
+        <h2>Segunda</h2>
+        <table border="1" style="margin: 0 auto; border: 1px groove black">
+            <tr>
+                <td rowspan="3"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+        <br>
+
+        <h2>Terceira</h2>
+        <table border="1" style="margin: 0 auto; border: 1px groove black">
+            <tr>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td rowspan="4"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td rowspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td></td>
+            </tr>
         </table>
     </main>
 </body>
